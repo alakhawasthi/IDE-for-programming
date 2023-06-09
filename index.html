@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Code Runner</title>
+  <link rel="stylesheet" href="css/land.css">
+</head>
+
+<body class="bg-pro overflow-hidden">
+    <div
+        class="navbar flex justify-center items-center bg-black text-white h-16 font-Poppins text-2xl lg:h-20 lg:text-3xl md:h-16 md:text-2xl">
+        <div class="left mr-2"><img class="w-11 md:w-14 lg:w-16"
+                src="https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
+                alt="javascript"></div>
+        <span class="text-orange-400">Learner</span>
+
+        <div class="add inline-block">
+
+        </div>
+    </div>
+
+    <div
+        class="main  text-white flex justify-center items-center mt-60 r-mono text-2xl ml-9 mr-9 md:text-lg md:ml-20 md:mr-9 lg:text-lg xl:text-2xl flex-col">
+        JS IDE for javascript Learners By a Developer
+        <span id="element"></span>
+    </div>
+    <div class="btn text-white flex justify-center items-center space-x-20 mt-10">
+            <button
+                class="btn1 bg-purple-500 h-10 w-20 rounded-md hover:bg-purple-600 hover:animate-bounce">Learn</button>
+        <button  onclick = "window.location.href='start.html';" class="btn2 bg-purple-500 h-10 w-32 rounded-md hover:bg-purple-600 hover:animate-bounce">Get
+            Started</button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Its a Very Powerful IDE', ' Heaven For JS Developer', 'Ultra Super IDE on Browser', 'Now You Ready to do Code', 'Let,s Get Started'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
