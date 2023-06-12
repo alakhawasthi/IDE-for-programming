@@ -11,7 +11,7 @@ def main():
 def start():
     if request.method == 'POST':
         file = request.form.get('filename')
-        filefullname = file + ".js"
+        filefullname = file + ".html"
         fo = open(filefullname, "a")
     return render_template('start.html')
 
@@ -28,9 +28,10 @@ def editor():
 def terminal():
     if request.method == "POST":
         path = request.form.get("path")
-        fullpath = "node"+ " " +'"' + path + '"'
-        f = open("run.bat", "w")
-        f.write(fullpath)
+        # fullpath = "node"+ " " +'"' + path + '"'
+        # f = open("run.bat", "w")
+        # f.write(fullpath)
+        path = request.form.get("path")
     return render_template('terminal.html')
 
-app.run(debug=True)
+app.run()

@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "emmet": "^2.4.4",
     "tailwindcss": "^3.3.2"
   }
 }
