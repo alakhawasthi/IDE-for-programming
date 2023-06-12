@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./static/src/input.css -o ./static/css/main.css --watch"
+    "start": "npx tailwindcss -i ./static/src/input.css -o ./static/css/main.css --watch",
+    "server": "python -u run.py"
   },
   "keywords": [],
   "author": "",

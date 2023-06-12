@@ -31,7 +31,6 @@ def terminal():
         fullpath = "node"+ " " +'"' + path + '"'
         f = open("run.bat", "w")
         f.write(fullpath)
-        os.system(fullpath)
     return render_template('terminal.html')
 
 app.run(debug=True)
