@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request
+import os
 
 app = Flask(__name__)
 
@@ -25,6 +26,10 @@ def editor():
 
 @app.route('/terminal', methods = ['GET', 'POST'])
 def terminal():
+    if request.method == "POST":
+        path = request.form.get("path")
+        fullpath = "node"+ " " +'"' + path + '"'
+        output = os.system(fullpath)
     return render_template('terminal.html')
 
 app.run(debug=True)
