@@ -23,4 +23,8 @@ def editor():
         f.write(code)
     return render_template('Editor.html')
 
+@app.route('/terminal', methods = ['GET', 'POST'])
+def terminal():
+    return render_template('terminal.html')
+
 app.run(debug=True)
