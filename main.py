@@ -29,7 +29,9 @@ def terminal():
     if request.method == "POST":
         path = request.form.get("path")
         fullpath = "node"+ " " +'"' + path + '"'
-        output = os.system(fullpath)
+        f = open("run.bat", "w")
+        f.write(fullpath)
+        os.system(fullpath)
     return render_template('terminal.html')
 
 app.run(debug=True)
